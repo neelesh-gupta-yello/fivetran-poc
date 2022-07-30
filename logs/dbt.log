@@ -1,0 +1,1458 @@
+2022-07-30 22:55:08.728042 (MainThread): Running with dbt=0.19.1
+2022-07-30 22:55:12.588832 (MainThread): You have an incompatible version of 'pyarrow' installed, please install a version that adheres to: 'pyarrow<0.18.0,>=0.17.0; extra == "pandas"'
+2022-07-30 22:55:12.676083 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/neelshgupta/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-07-30 22:55:12.678490 (MainThread): Tracking: tracking
+2022-07-30 22:55:12.679147 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14f6aa320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14a8ace10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14f6d17b8>]}
+2022-07-30 22:55:12.712783 (MainThread): Partial parsing not enabled
+2022-07-30 22:55:12.716093 (MainThread): Parsing macros/catalog.sql
+2022-07-30 22:55:12.720544 (MainThread): Parsing macros/adapters.sql
+2022-07-30 22:55:12.762417 (MainThread): Parsing macros/materializations/merge.sql
+2022-07-30 22:55:12.766126 (MainThread): Parsing macros/materializations/view.sql
+2022-07-30 22:55:12.769683 (MainThread): Parsing macros/materializations/table.sql
+2022-07-30 22:55:12.776329 (MainThread): Parsing macros/materializations/incremental.sql
+2022-07-30 22:55:12.795761 (MainThread): Parsing macros/core.sql
+2022-07-30 22:55:12.802622 (MainThread): Parsing macros/materializations/helpers.sql
+2022-07-30 22:55:12.817001 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-07-30 22:55:12.821379 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-07-30 22:55:12.895682 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-07-30 22:55:12.932282 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-07-30 22:55:12.957262 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-07-30 22:55:12.961570 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-07-30 22:55:12.970834 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-07-30 22:55:12.987025 (MainThread): Parsing macros/materializations/table/table.sql
+2022-07-30 22:55:12.996213 (MainThread): Parsing macros/materializations/view/view.sql
+2022-07-30 22:55:13.005051 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-07-30 22:55:13.012736 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-07-30 22:55:13.015751 (MainThread): Parsing macros/etc/query.sql
+2022-07-30 22:55:13.018993 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-07-30 22:55:13.022815 (MainThread): Parsing macros/etc/datetime.sql
+2022-07-30 22:55:13.034343 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-07-30 22:55:13.038338 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-07-30 22:55:13.042556 (MainThread): Parsing macros/adapters/common.sql
+2022-07-30 22:55:13.090686 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-07-30 22:55:13.095124 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-07-30 22:55:13.099043 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-07-30 22:55:13.103628 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-07-30 22:55:13.114288 (MainThread): Partial parsing not enabled
+2022-07-30 22:55:13.152646 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 22:55:13.167655 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_second_dbt_model".
+2022-07-30 22:55:13.292437 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '799dbf0c-58a1-4ec0-92e0-342d8bc7f68a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14f9a6358>]}
+2022-07-30 22:55:13.297984 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '799dbf0c-58a1-4ec0-92e0-342d8bc7f68a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14f65f6a0>]}
+2022-07-30 22:55:13.298224 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-30 22:55:13.298886 (MainThread): 
+2022-07-30 22:55:13.299250 (MainThread): Acquiring new snowflake connection "master".
+2022-07-30 22:55:13.300440 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_COMBINE_DW".
+2022-07-30 22:55:13.318883 (ThreadPoolExecutor-0_0): Using snowflake connection "list_COMBINE_DW".
+2022-07-30 22:55:13.319025 (ThreadPoolExecutor-0_0): On list_COMBINE_DW: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_COMBINE_DW"} */
+
+    show terse schemas in database COMBINE_DW
+    limit 10000
+2022-07-30 22:55:13.319107 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-30 22:55:14.858382 (ThreadPoolExecutor-0_0): Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=24aa065b-7b8e-4084-9835-c70d94ffaf63&databaseName=COMBINE_DW&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=2250d44b-affa-46f0-8eac-93f13ecb87b3, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.2.8 (Darwin-20.5.0-x86_64-i386-64bit) CPython/3.6.13', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "PythonConnector", "CLIENT_APP_VERSION": "2.2.8", "SVN_REVISION": null, "ACCOUNT_NAME": "zs12696", "LOGIN_NAME": "neeleshguptayello", "CLIENT_ENVIRONMENT": {"APPLICATION": "dbt", "OS": "Darwin", "OS_VERSION": "Darwin-20.5.0-x86_64-i386-64bit", "PYTHON_VERSION": "3.6.13", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "GCC Clang 10.0.0 ", "OCSP_MODE": "FAIL_OPEN", "TRACING": 40, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null, "CLIENT_STORE_TEMPORARY_CREDENTIAL": null}, "PASSWORD": "********", "SESSION_PARAMETERS": {"AUTOCOMMIT": false, "CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY": 900, "CLIENT_PREFETCH_THREADS": 4}}}
+2022-07-30 22:55:14.858582 (ThreadPoolExecutor-0_0): Got an error when attempting to open a snowflake connection: '250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=24aa065b-7b8e-4084-9835-c70d94ffaf63&databaseName=COMBINE_DW&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=2250d44b-affa-46f0-8eac-93f13ecb87b3'
+2022-07-30 22:55:14.858677 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_COMBINE_DW"} */
+
+    show terse schemas in database COMBINE_DW
+    limit 10000
+2022-07-30 22:55:14.858741 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-07-30 22:55:14.858856 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2022-07-30 22:55:14.858915 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-07-30 22:55:14.859014 (ThreadPoolExecutor-0_0): On list_COMBINE_DW: No close available on handle
+2022-07-30 22:55:14.859476 (MainThread): Connection 'master' was properly closed.
+2022-07-30 22:55:14.859559 (MainThread): Connection 'list_COMBINE_DW' was properly closed.
+2022-07-30 22:55:14.859693 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14f97b780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14f949a58>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa14f65f6a0>]}
+2022-07-30 22:55:14.859866 (MainThread): Flushing usage events
+2022-07-30 22:55:15.266204 (MainThread): Encountered an error:
+2022-07-30 22:55:15.266441 (MainThread): Runtime Error
+  Database error while listing schemas in database "COMBINE_DW"
+  Database Error
+    250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=24aa065b-7b8e-4084-9835-c70d94ffaf63&databaseName=COMBINE_DW&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=2250d44b-affa-46f0-8eac-93f13ecb87b3
+2022-07-30 22:55:15.323766 (MainThread): Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 213, in open
+    **creds.auth_args()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/__init__.py", line 52, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 223, in __init__
+    self.connect(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 418, in connect
+    self.__open_connection()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 615, in __open_connection
+    self._authenticate(auth_instance)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 819, in _authenticate
+    self.__authenticate(self.__preprocess_auth_instance(auth_instance))
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 849, in __authenticate
+    session_parameters=self._session_parameters,
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/auth.py", line 216, in authenticate
+    socket_timeout=self._rest._connection.login_timeout)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 491, in _post_request
+    _include_retry_params=_include_retry_params)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 568, in fetch
+    **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 677, in _request_exec_wrapper
+    raise e
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 610, in _request_exec_wrapper
+    method, full_url, headers, data, conn)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 721, in _handle_unknown_error
+    'errno': ER_FAILED_TO_REQUEST,
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/errors.py", line 126, in errorhandler_wrapper
+    connection.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/errors.py", line 88, in default_errorhandler
+    done_format_msg=error_value.get('done_format_msg'))
+snowflake.connector.errors.OperationalError: 250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=24aa065b-7b8e-4084-9835-c70d94ffaf63&databaseName=COMBINE_DW&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=2250d44b-affa-46f0-8eac-93f13ecb87b3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/impl.py", line 103, in list_schemas
+    kwargs={'database': database}
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 1002, in execute_macro
+    result = macro_function(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 230, in execute
+    fetch=fetch
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 317, in add_query
+    abridge_sql_log=abridge_sql_log
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 79, in add_query
+    cursor = connection.handle.cursor()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/contracts/connection.py", line 81, in handle
+    self._handle.resolve(self)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/contracts/connection.py", line 107, in resolve
+    return self.opener(connection)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 231, in open
+    raise FailedToConnectException(str(e))
+dbt.exceptions.FailedToConnectException: Database Error
+  250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=24aa065b-7b8e-4084-9835-c70d94ffaf63&databaseName=COMBINE_DW&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=2250d44b-affa-46f0-8eac-93f13ecb87b3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 426, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/run.py", line 409, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 515, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/utils.py", line 469, in connected
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 492, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/impl.py", line 110, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "COMBINE_DW"
+  Database Error
+    250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=24aa065b-7b8e-4084-9835-c70d94ffaf63&databaseName=COMBINE_DW&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=2250d44b-affa-46f0-8eac-93f13ecb87b3
+
+2022-07-30 23:00:33.352215 (MainThread): Running with dbt=0.19.1
+2022-07-30 23:00:34.227233 (MainThread): You have an incompatible version of 'pyarrow' installed, please install a version that adheres to: 'pyarrow<0.18.0,>=0.17.0; extra == "pandas"'
+2022-07-30 23:00:34.295473 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/neelshgupta/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-07-30 23:00:34.299075 (MainThread): Tracking: tracking
+2022-07-30 23:00:34.299614 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80dc46b1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80d68ace10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80dc482780>]}
+2022-07-30 23:00:34.314513 (MainThread): Partial parsing not enabled
+2022-07-30 23:00:34.316154 (MainThread): Parsing macros/catalog.sql
+2022-07-30 23:00:34.318927 (MainThread): Parsing macros/adapters.sql
+2022-07-30 23:00:34.349883 (MainThread): Parsing macros/materializations/merge.sql
+2022-07-30 23:00:34.352491 (MainThread): Parsing macros/materializations/view.sql
+2022-07-30 23:00:34.354426 (MainThread): Parsing macros/materializations/table.sql
+2022-07-30 23:00:34.358766 (MainThread): Parsing macros/materializations/incremental.sql
+2022-07-30 23:00:34.370772 (MainThread): Parsing macros/core.sql
+2022-07-30 23:00:34.375096 (MainThread): Parsing macros/materializations/helpers.sql
+2022-07-30 23:00:34.384696 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-07-30 23:00:34.386688 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-07-30 23:00:34.491144 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-07-30 23:00:34.533250 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-07-30 23:00:34.554896 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-07-30 23:00:34.557005 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-07-30 23:00:34.563834 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-07-30 23:00:34.578766 (MainThread): Parsing macros/materializations/table/table.sql
+2022-07-30 23:00:34.586428 (MainThread): Parsing macros/materializations/view/view.sql
+2022-07-30 23:00:34.593122 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-07-30 23:00:34.599218 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-07-30 23:00:34.600485 (MainThread): Parsing macros/etc/query.sql
+2022-07-30 23:00:34.601746 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-07-30 23:00:34.603798 (MainThread): Parsing macros/etc/datetime.sql
+2022-07-30 23:00:34.613507 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-07-30 23:00:34.616434 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-07-30 23:00:34.618430 (MainThread): Parsing macros/adapters/common.sql
+2022-07-30 23:00:34.660786 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-07-30 23:00:34.663111 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-07-30 23:00:34.664871 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-07-30 23:00:34.667089 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-07-30 23:00:34.675492 (MainThread): Partial parsing not enabled
+2022-07-30 23:00:34.697287 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:00:34.706905 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_second_dbt_model".
+2022-07-30 23:00:34.774185 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6a81d464-0872-4be3-8978-65bfcafdee5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80dc8a5358>]}
+2022-07-30 23:00:34.783549 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6a81d464-0872-4be3-8978-65bfcafdee5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80da6a2438>]}
+2022-07-30 23:00:34.783871 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-30 23:00:34.784575 (MainThread): 
+2022-07-30 23:00:34.784883 (MainThread): Acquiring new snowflake connection "master".
+2022-07-30 23:00:34.785709 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_FIVETRAN_DATABASE".
+2022-07-30 23:00:34.797419 (ThreadPoolExecutor-0_0): Using snowflake connection "list_FIVETRAN_DATABASE".
+2022-07-30 23:00:34.797554 (ThreadPoolExecutor-0_0): On list_FIVETRAN_DATABASE: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_FIVETRAN_DATABASE"} */
+
+    show terse schemas in database FIVETRAN_DATABASE
+    limit 10000
+2022-07-30 23:00:34.797629 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-30 23:00:35.931319 (ThreadPoolExecutor-0_0): Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=e6b142bf-6708-4dbd-ad12-776f40c71b15&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=3896a094-301c-46d1-afe9-3ce27ae919d1, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.2.8 (Darwin-20.5.0-x86_64-i386-64bit) CPython/3.6.13', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "PythonConnector", "CLIENT_APP_VERSION": "2.2.8", "SVN_REVISION": null, "ACCOUNT_NAME": "zs12696", "LOGIN_NAME": "neeleshguptayello", "CLIENT_ENVIRONMENT": {"APPLICATION": "dbt", "OS": "Darwin", "OS_VERSION": "Darwin-20.5.0-x86_64-i386-64bit", "PYTHON_VERSION": "3.6.13", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "GCC Clang 10.0.0 ", "OCSP_MODE": "FAIL_OPEN", "TRACING": 40, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null, "CLIENT_STORE_TEMPORARY_CREDENTIAL": null}, "PASSWORD": "********", "SESSION_PARAMETERS": {"AUTOCOMMIT": false, "CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY": 900, "CLIENT_PREFETCH_THREADS": 4}}}
+2022-07-30 23:00:35.931504 (ThreadPoolExecutor-0_0): Got an error when attempting to open a snowflake connection: '250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=e6b142bf-6708-4dbd-ad12-776f40c71b15&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=3896a094-301c-46d1-afe9-3ce27ae919d1'
+2022-07-30 23:00:35.931595 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_FIVETRAN_DATABASE"} */
+
+    show terse schemas in database FIVETRAN_DATABASE
+    limit 10000
+2022-07-30 23:00:35.931655 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-07-30 23:00:35.931764 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2022-07-30 23:00:35.931818 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-07-30 23:00:35.931913 (ThreadPoolExecutor-0_0): On list_FIVETRAN_DATABASE: No close available on handle
+2022-07-30 23:00:35.932463 (MainThread): Connection 'master' was properly closed.
+2022-07-30 23:00:35.932544 (MainThread): Connection 'list_FIVETRAN_DATABASE' was properly closed.
+2022-07-30 23:00:35.932677 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80dc854ba8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80dc4219b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f80dc8d0c88>]}
+2022-07-30 23:00:35.932828 (MainThread): Flushing usage events
+2022-07-30 23:00:36.347004 (MainThread): Encountered an error:
+2022-07-30 23:00:36.347284 (MainThread): Runtime Error
+  Database error while listing schemas in database "FIVETRAN_DATABASE"
+  Database Error
+    250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=e6b142bf-6708-4dbd-ad12-776f40c71b15&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=3896a094-301c-46d1-afe9-3ce27ae919d1
+2022-07-30 23:00:36.357254 (MainThread): Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 213, in open
+    **creds.auth_args()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/__init__.py", line 52, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 223, in __init__
+    self.connect(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 418, in connect
+    self.__open_connection()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 615, in __open_connection
+    self._authenticate(auth_instance)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 819, in _authenticate
+    self.__authenticate(self.__preprocess_auth_instance(auth_instance))
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 849, in __authenticate
+    session_parameters=self._session_parameters,
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/auth.py", line 216, in authenticate
+    socket_timeout=self._rest._connection.login_timeout)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 491, in _post_request
+    _include_retry_params=_include_retry_params)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 568, in fetch
+    **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 677, in _request_exec_wrapper
+    raise e
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 610, in _request_exec_wrapper
+    method, full_url, headers, data, conn)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 721, in _handle_unknown_error
+    'errno': ER_FAILED_TO_REQUEST,
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/errors.py", line 126, in errorhandler_wrapper
+    connection.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/errors.py", line 88, in default_errorhandler
+    done_format_msg=error_value.get('done_format_msg'))
+snowflake.connector.errors.OperationalError: 250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=e6b142bf-6708-4dbd-ad12-776f40c71b15&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=3896a094-301c-46d1-afe9-3ce27ae919d1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/impl.py", line 103, in list_schemas
+    kwargs={'database': database}
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 1002, in execute_macro
+    result = macro_function(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 230, in execute
+    fetch=fetch
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 317, in add_query
+    abridge_sql_log=abridge_sql_log
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 79, in add_query
+    cursor = connection.handle.cursor()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/contracts/connection.py", line 81, in handle
+    self._handle.resolve(self)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/contracts/connection.py", line 107, in resolve
+    return self.opener(connection)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 231, in open
+    raise FailedToConnectException(str(e))
+dbt.exceptions.FailedToConnectException: Database Error
+  250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=e6b142bf-6708-4dbd-ad12-776f40c71b15&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=3896a094-301c-46d1-afe9-3ce27ae919d1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 426, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/run.py", line 409, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 515, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/utils.py", line 469, in connected
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 492, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/impl.py", line 110, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "FIVETRAN_DATABASE"
+  Database Error
+    250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=e6b142bf-6708-4dbd-ad12-776f40c71b15&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=ACCOUNTADMIN&request_guid=3896a094-301c-46d1-afe9-3ce27ae919d1
+
+2022-07-30 23:04:00.673319 (MainThread): Running with dbt=0.19.1
+2022-07-30 23:04:01.607455 (MainThread): You have an incompatible version of 'pyarrow' installed, please install a version that adheres to: 'pyarrow<0.18.0,>=0.17.0; extra == "pandas"'
+2022-07-30 23:04:01.671139 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/neelshgupta/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-07-30 23:04:01.675044 (MainThread): Tracking: tracking
+2022-07-30 23:04:01.675691 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd5e64faeb8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd5e64faf28>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd5e64facf8>]}
+2022-07-30 23:04:01.688983 (MainThread): Partial parsing not enabled
+2022-07-30 23:04:01.690567 (MainThread): Parsing macros/catalog.sql
+2022-07-30 23:04:01.693235 (MainThread): Parsing macros/adapters.sql
+2022-07-30 23:04:01.724113 (MainThread): Parsing macros/materializations/merge.sql
+2022-07-30 23:04:01.726437 (MainThread): Parsing macros/materializations/view.sql
+2022-07-30 23:04:01.728217 (MainThread): Parsing macros/materializations/table.sql
+2022-07-30 23:04:01.734022 (MainThread): Parsing macros/materializations/incremental.sql
+2022-07-30 23:04:01.747588 (MainThread): Parsing macros/core.sql
+2022-07-30 23:04:01.751837 (MainThread): Parsing macros/materializations/helpers.sql
+2022-07-30 23:04:01.761014 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-07-30 23:04:01.763070 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-07-30 23:04:01.866459 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-07-30 23:04:01.906809 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-07-30 23:04:01.928455 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-07-30 23:04:01.930661 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-07-30 23:04:01.936874 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-07-30 23:04:01.951047 (MainThread): Parsing macros/materializations/table/table.sql
+2022-07-30 23:04:01.958298 (MainThread): Parsing macros/materializations/view/view.sql
+2022-07-30 23:04:01.964345 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-07-30 23:04:01.969669 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-07-30 23:04:01.970835 (MainThread): Parsing macros/etc/query.sql
+2022-07-30 23:04:01.972207 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-07-30 23:04:01.974502 (MainThread): Parsing macros/etc/datetime.sql
+2022-07-30 23:04:01.983338 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-07-30 23:04:01.985547 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-07-30 23:04:01.987460 (MainThread): Parsing macros/adapters/common.sql
+2022-07-30 23:04:02.028401 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-07-30 23:04:02.030692 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-07-30 23:04:02.032676 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-07-30 23:04:02.034519 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-07-30 23:04:02.042753 (MainThread): Partial parsing not enabled
+2022-07-30 23:04:02.063694 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:04:02.073641 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_second_dbt_model".
+2022-07-30 23:04:02.140163 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ef4352e7-5c3d-4e44-9a21-1563bf4e0f8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd5e680e2b0>]}
+2022-07-30 23:04:02.144877 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ef4352e7-5c3d-4e44-9a21-1563bf4e0f8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd5e46a9710>]}
+2022-07-30 23:04:02.145233 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-30 23:04:02.146073 (MainThread): 
+2022-07-30 23:04:02.146427 (MainThread): Acquiring new snowflake connection "master".
+2022-07-30 23:04:02.147290 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_FIVETRAN_DATABASE".
+2022-07-30 23:04:02.158897 (ThreadPoolExecutor-0_0): Using snowflake connection "list_FIVETRAN_DATABASE".
+2022-07-30 23:04:02.159035 (ThreadPoolExecutor-0_0): On list_FIVETRAN_DATABASE: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_FIVETRAN_DATABASE"} */
+
+    show terse schemas in database FIVETRAN_DATABASE
+    limit 10000
+2022-07-30 23:04:02.159114 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-30 23:04:03.347846 (ThreadPoolExecutor-0_0): Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=79fe0d93-9141-4517-8502-8d5bf613c93a&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=FIVETRAN_ROLE&request_guid=10fa477d-7e29-4dfa-84c0-72d9fc06e545, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.2.8 (Darwin-20.5.0-x86_64-i386-64bit) CPython/3.6.13', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "PythonConnector", "CLIENT_APP_VERSION": "2.2.8", "SVN_REVISION": null, "ACCOUNT_NAME": "zs12696", "LOGIN_NAME": "FIVETRAN_USER", "CLIENT_ENVIRONMENT": {"APPLICATION": "dbt", "OS": "Darwin", "OS_VERSION": "Darwin-20.5.0-x86_64-i386-64bit", "PYTHON_VERSION": "3.6.13", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "GCC Clang 10.0.0 ", "OCSP_MODE": "FAIL_OPEN", "TRACING": 40, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null, "CLIENT_STORE_TEMPORARY_CREDENTIAL": null}, "PASSWORD": "********", "SESSION_PARAMETERS": {"AUTOCOMMIT": false, "CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY": 900, "CLIENT_PREFETCH_THREADS": 4}}}
+2022-07-30 23:04:03.348020 (ThreadPoolExecutor-0_0): Got an error when attempting to open a snowflake connection: '250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=79fe0d93-9141-4517-8502-8d5bf613c93a&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=FIVETRAN_ROLE&request_guid=10fa477d-7e29-4dfa-84c0-72d9fc06e545'
+2022-07-30 23:04:03.348115 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_FIVETRAN_DATABASE"} */
+
+    show terse schemas in database FIVETRAN_DATABASE
+    limit 10000
+2022-07-30 23:04:03.348175 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-07-30 23:04:03.348282 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2022-07-30 23:04:03.348337 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-07-30 23:04:03.348430 (ThreadPoolExecutor-0_0): On list_FIVETRAN_DATABASE: No close available on handle
+2022-07-30 23:04:03.348953 (MainThread): Connection 'master' was properly closed.
+2022-07-30 23:04:03.349081 (MainThread): Connection 'list_FIVETRAN_DATABASE' was properly closed.
+2022-07-30 23:04:03.349242 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd5e67db5f8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd5e67a0438>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd5e6c203c8>]}
+2022-07-30 23:04:03.349497 (MainThread): Flushing usage events
+2022-07-30 23:04:03.742134 (MainThread): Encountered an error:
+2022-07-30 23:04:03.742515 (MainThread): Runtime Error
+  Database error while listing schemas in database "FIVETRAN_DATABASE"
+  Database Error
+    250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=79fe0d93-9141-4517-8502-8d5bf613c93a&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=FIVETRAN_ROLE&request_guid=10fa477d-7e29-4dfa-84c0-72d9fc06e545
+2022-07-30 23:04:03.753447 (MainThread): Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 213, in open
+    **creds.auth_args()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/__init__.py", line 52, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 223, in __init__
+    self.connect(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 418, in connect
+    self.__open_connection()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 615, in __open_connection
+    self._authenticate(auth_instance)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 819, in _authenticate
+    self.__authenticate(self.__preprocess_auth_instance(auth_instance))
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 849, in __authenticate
+    session_parameters=self._session_parameters,
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/auth.py", line 216, in authenticate
+    socket_timeout=self._rest._connection.login_timeout)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 491, in _post_request
+    _include_retry_params=_include_retry_params)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 568, in fetch
+    **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 677, in _request_exec_wrapper
+    raise e
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 610, in _request_exec_wrapper
+    method, full_url, headers, data, conn)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 721, in _handle_unknown_error
+    'errno': ER_FAILED_TO_REQUEST,
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/errors.py", line 126, in errorhandler_wrapper
+    connection.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/errors.py", line 88, in default_errorhandler
+    done_format_msg=error_value.get('done_format_msg'))
+snowflake.connector.errors.OperationalError: 250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=79fe0d93-9141-4517-8502-8d5bf613c93a&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=FIVETRAN_ROLE&request_guid=10fa477d-7e29-4dfa-84c0-72d9fc06e545
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/impl.py", line 103, in list_schemas
+    kwargs={'database': database}
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 1002, in execute_macro
+    result = macro_function(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 230, in execute
+    fetch=fetch
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 317, in add_query
+    abridge_sql_log=abridge_sql_log
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 79, in add_query
+    cursor = connection.handle.cursor()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/contracts/connection.py", line 81, in handle
+    self._handle.resolve(self)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/contracts/connection.py", line 107, in resolve
+    return self.opener(connection)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 231, in open
+    raise FailedToConnectException(str(e))
+dbt.exceptions.FailedToConnectException: Database Error
+  250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=79fe0d93-9141-4517-8502-8d5bf613c93a&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=FIVETRAN_ROLE&request_guid=10fa477d-7e29-4dfa-84c0-72d9fc06e545
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 426, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/run.py", line 409, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 515, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/utils.py", line 469, in connected
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 492, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/impl.py", line 110, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "FIVETRAN_DATABASE"
+  Database Error
+    250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=79fe0d93-9141-4517-8502-8d5bf613c93a&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=FIVETRAN_ROLE&request_guid=10fa477d-7e29-4dfa-84c0-72d9fc06e545
+
+2022-07-30 23:08:13.492790 (MainThread): Running with dbt=0.19.1
+2022-07-30 23:08:14.447865 (MainThread): You have an incompatible version of 'pyarrow' installed, please install a version that adheres to: 'pyarrow<0.18.0,>=0.17.0; extra == "pandas"'
+2022-07-30 23:08:14.512428 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/neelshgupta/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-07-30 23:08:14.515885 (MainThread): Tracking: tracking
+2022-07-30 23:08:14.516582 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a59d671d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a548ade10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a59d87780>]}
+2022-07-30 23:08:14.530307 (MainThread): Partial parsing not enabled
+2022-07-30 23:08:14.531983 (MainThread): Parsing macros/catalog.sql
+2022-07-30 23:08:14.534626 (MainThread): Parsing macros/adapters.sql
+2022-07-30 23:08:14.565111 (MainThread): Parsing macros/materializations/merge.sql
+2022-07-30 23:08:14.567577 (MainThread): Parsing macros/materializations/view.sql
+2022-07-30 23:08:14.569424 (MainThread): Parsing macros/materializations/table.sql
+2022-07-30 23:08:14.573903 (MainThread): Parsing macros/materializations/incremental.sql
+2022-07-30 23:08:14.586814 (MainThread): Parsing macros/core.sql
+2022-07-30 23:08:14.590921 (MainThread): Parsing macros/materializations/helpers.sql
+2022-07-30 23:08:14.599743 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-07-30 23:08:14.601724 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-07-30 23:08:14.706007 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-07-30 23:08:14.746737 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-07-30 23:08:14.768304 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-07-30 23:08:14.770394 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-07-30 23:08:14.776882 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-07-30 23:08:14.792001 (MainThread): Parsing macros/materializations/table/table.sql
+2022-07-30 23:08:14.799231 (MainThread): Parsing macros/materializations/view/view.sql
+2022-07-30 23:08:14.805537 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-07-30 23:08:14.811241 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-07-30 23:08:14.812530 (MainThread): Parsing macros/etc/query.sql
+2022-07-30 23:08:14.813785 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-07-30 23:08:14.815572 (MainThread): Parsing macros/etc/datetime.sql
+2022-07-30 23:08:14.824421 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-07-30 23:08:14.827013 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-07-30 23:08:14.828935 (MainThread): Parsing macros/adapters/common.sql
+2022-07-30 23:08:14.870107 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-07-30 23:08:14.872161 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-07-30 23:08:14.873797 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-07-30 23:08:14.875766 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-07-30 23:08:14.884386 (MainThread): Partial parsing not enabled
+2022-07-30 23:08:14.908326 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:08:14.918862 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_second_dbt_model".
+2022-07-30 23:08:14.985175 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bc9a83bd-1c98-4575-ace4-c014df83cef6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a5a066320>]}
+2022-07-30 23:08:14.993489 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bc9a83bd-1c98-4575-ace4-c014df83cef6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a59ee25c0>]}
+2022-07-30 23:08:14.993758 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-30 23:08:14.994443 (MainThread): 
+2022-07-30 23:08:14.994743 (MainThread): Acquiring new snowflake connection "master".
+2022-07-30 23:08:14.995562 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_FIVETRAN_DATABASE".
+2022-07-30 23:08:15.006967 (ThreadPoolExecutor-0_0): Using snowflake connection "list_FIVETRAN_DATABASE".
+2022-07-30 23:08:15.007089 (ThreadPoolExecutor-0_0): On list_FIVETRAN_DATABASE: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_FIVETRAN_DATABASE"} */
+
+    show terse schemas in database FIVETRAN_DATABASE
+    limit 10000
+2022-07-30 23:08:15.007163 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-30 23:08:16.210463 (ThreadPoolExecutor-0_0): Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=da910689-adc5-4334-adbf-885dad0dcf27&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=FIVETRAN_ROLE&request_guid=cc6f9567-8232-4eba-acd6-564390afe7e7, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.2.8 (Darwin-20.5.0-x86_64-i386-64bit) CPython/3.6.13', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "PythonConnector", "CLIENT_APP_VERSION": "2.2.8", "SVN_REVISION": null, "ACCOUNT_NAME": "zs12696", "LOGIN_NAME": "FIVETRAN_USER", "CLIENT_ENVIRONMENT": {"APPLICATION": "dbt", "OS": "Darwin", "OS_VERSION": "Darwin-20.5.0-x86_64-i386-64bit", "PYTHON_VERSION": "3.6.13", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "GCC Clang 10.0.0 ", "OCSP_MODE": "FAIL_OPEN", "TRACING": 40, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null, "CLIENT_STORE_TEMPORARY_CREDENTIAL": null}, "PASSWORD": "********", "SESSION_PARAMETERS": {"AUTOCOMMIT": false, "CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY": 900, "CLIENT_PREFETCH_THREADS": 4}}}
+2022-07-30 23:08:16.210644 (ThreadPoolExecutor-0_0): Got an error when attempting to open a snowflake connection: '250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=da910689-adc5-4334-adbf-885dad0dcf27&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=FIVETRAN_ROLE&request_guid=cc6f9567-8232-4eba-acd6-564390afe7e7'
+2022-07-30 23:08:16.210728 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_FIVETRAN_DATABASE"} */
+
+    show terse schemas in database FIVETRAN_DATABASE
+    limit 10000
+2022-07-30 23:08:16.210783 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-07-30 23:08:16.210885 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2022-07-30 23:08:16.210936 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-07-30 23:08:16.211025 (ThreadPoolExecutor-0_0): On list_FIVETRAN_DATABASE: No close available on handle
+2022-07-30 23:08:16.211637 (MainThread): Connection 'master' was properly closed.
+2022-07-30 23:08:16.211710 (MainThread): Connection 'list_FIVETRAN_DATABASE' was properly closed.
+2022-07-30 23:08:16.211850 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a59ee25c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a5a02a160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a5a379358>]}
+2022-07-30 23:08:16.211995 (MainThread): Flushing usage events
+2022-07-30 23:08:16.639937 (MainThread): Encountered an error:
+2022-07-30 23:08:16.640200 (MainThread): Runtime Error
+  Database error while listing schemas in database "FIVETRAN_DATABASE"
+  Database Error
+    250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=da910689-adc5-4334-adbf-885dad0dcf27&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=FIVETRAN_ROLE&request_guid=cc6f9567-8232-4eba-acd6-564390afe7e7
+2022-07-30 23:08:16.650342 (MainThread): Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 213, in open
+    **creds.auth_args()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/__init__.py", line 52, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 223, in __init__
+    self.connect(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 418, in connect
+    self.__open_connection()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 615, in __open_connection
+    self._authenticate(auth_instance)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 819, in _authenticate
+    self.__authenticate(self.__preprocess_auth_instance(auth_instance))
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 849, in __authenticate
+    session_parameters=self._session_parameters,
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/auth.py", line 216, in authenticate
+    socket_timeout=self._rest._connection.login_timeout)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 491, in _post_request
+    _include_retry_params=_include_retry_params)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 568, in fetch
+    **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 677, in _request_exec_wrapper
+    raise e
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 610, in _request_exec_wrapper
+    method, full_url, headers, data, conn)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 721, in _handle_unknown_error
+    'errno': ER_FAILED_TO_REQUEST,
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/errors.py", line 126, in errorhandler_wrapper
+    connection.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/errors.py", line 88, in default_errorhandler
+    done_format_msg=error_value.get('done_format_msg'))
+snowflake.connector.errors.OperationalError: 250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=da910689-adc5-4334-adbf-885dad0dcf27&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=FIVETRAN_ROLE&request_guid=cc6f9567-8232-4eba-acd6-564390afe7e7
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/impl.py", line 103, in list_schemas
+    kwargs={'database': database}
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 1002, in execute_macro
+    result = macro_function(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 230, in execute
+    fetch=fetch
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 317, in add_query
+    abridge_sql_log=abridge_sql_log
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 79, in add_query
+    cursor = connection.handle.cursor()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/contracts/connection.py", line 81, in handle
+    self._handle.resolve(self)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/contracts/connection.py", line 107, in resolve
+    return self.opener(connection)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 231, in open
+    raise FailedToConnectException(str(e))
+dbt.exceptions.FailedToConnectException: Database Error
+  250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=da910689-adc5-4334-adbf-885dad0dcf27&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=FIVETRAN_ROLE&request_guid=cc6f9567-8232-4eba-acd6-564390afe7e7
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 426, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/run.py", line 409, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 515, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/utils.py", line 469, in connected
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 492, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/impl.py", line 110, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "FIVETRAN_DATABASE"
+  Database Error
+    250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=da910689-adc5-4334-adbf-885dad0dcf27&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=COMPUTE_WH&roleName=FIVETRAN_ROLE&request_guid=cc6f9567-8232-4eba-acd6-564390afe7e7
+
+2022-07-30 23:09:43.744587 (MainThread): Running with dbt=0.19.1
+2022-07-30 23:09:44.760101 (MainThread): You have an incompatible version of 'pyarrow' installed, please install a version that adheres to: 'pyarrow<0.18.0,>=0.17.0; extra == "pandas"'
+2022-07-30 23:09:44.822511 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/neelshgupta/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-07-30 23:09:44.824722 (MainThread): Tracking: tracking
+2022-07-30 23:09:44.825314 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc6644fcf8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc618ace10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc66488be0>]}
+2022-07-30 23:09:44.839410 (MainThread): Partial parsing not enabled
+2022-07-30 23:09:44.842297 (MainThread): Parsing macros/catalog.sql
+2022-07-30 23:09:44.844914 (MainThread): Parsing macros/adapters.sql
+2022-07-30 23:09:44.874940 (MainThread): Parsing macros/materializations/merge.sql
+2022-07-30 23:09:44.877272 (MainThread): Parsing macros/materializations/view.sql
+2022-07-30 23:09:44.878968 (MainThread): Parsing macros/materializations/table.sql
+2022-07-30 23:09:44.883116 (MainThread): Parsing macros/materializations/incremental.sql
+2022-07-30 23:09:44.898182 (MainThread): Parsing macros/core.sql
+2022-07-30 23:09:44.902824 (MainThread): Parsing macros/materializations/helpers.sql
+2022-07-30 23:09:44.912505 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-07-30 23:09:44.914467 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-07-30 23:09:44.998421 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-07-30 23:09:45.033754 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-07-30 23:09:45.054768 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-07-30 23:09:45.057000 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-07-30 23:09:45.063388 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-07-30 23:09:45.076921 (MainThread): Parsing macros/materializations/table/table.sql
+2022-07-30 23:09:45.083917 (MainThread): Parsing macros/materializations/view/view.sql
+2022-07-30 23:09:45.090612 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-07-30 23:09:45.095558 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-07-30 23:09:45.096676 (MainThread): Parsing macros/etc/query.sql
+2022-07-30 23:09:45.097891 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-07-30 23:09:45.099624 (MainThread): Parsing macros/etc/datetime.sql
+2022-07-30 23:09:45.108616 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-07-30 23:09:45.111087 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-07-30 23:09:45.112905 (MainThread): Parsing macros/adapters/common.sql
+2022-07-30 23:09:45.155376 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-07-30 23:09:45.157452 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-07-30 23:09:45.159349 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-07-30 23:09:45.161340 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-07-30 23:09:45.169347 (MainThread): Partial parsing not enabled
+2022-07-30 23:09:45.191169 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:09:45.200596 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_second_dbt_model".
+2022-07-30 23:09:45.266845 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '61bdeb3d-da76-414f-81dd-ecbff07841d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc66965358>]}
+2022-07-30 23:09:45.271971 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '61bdeb3d-da76-414f-81dd-ecbff07841d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc66425a20>]}
+2022-07-30 23:09:45.272386 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-30 23:09:45.273338 (MainThread): 
+2022-07-30 23:09:45.273763 (MainThread): Acquiring new snowflake connection "master".
+2022-07-30 23:09:45.274592 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_FIVETRAN_DATABASE".
+2022-07-30 23:09:45.285719 (ThreadPoolExecutor-0_0): Using snowflake connection "list_FIVETRAN_DATABASE".
+2022-07-30 23:09:45.285821 (ThreadPoolExecutor-0_0): On list_FIVETRAN_DATABASE: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_FIVETRAN_DATABASE"} */
+
+    show terse schemas in database FIVETRAN_DATABASE
+    limit 10000
+2022-07-30 23:09:45.285894 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-30 23:09:46.393744 (ThreadPoolExecutor-0_0): Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=4b90bd63-4831-46d2-bb78-a6449d24fc28&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=FIVETRAN_WAREHOUSE&roleName=FIVETRAN_ROLE&request_guid=d2895009-e037-4c7d-adec-fd1feea59159, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.2.8 (Darwin-20.5.0-x86_64-i386-64bit) CPython/3.6.13', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "PythonConnector", "CLIENT_APP_VERSION": "2.2.8", "SVN_REVISION": null, "ACCOUNT_NAME": "zs12696", "LOGIN_NAME": "FIVETRAN_USER", "CLIENT_ENVIRONMENT": {"APPLICATION": "dbt", "OS": "Darwin", "OS_VERSION": "Darwin-20.5.0-x86_64-i386-64bit", "PYTHON_VERSION": "3.6.13", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "GCC Clang 10.0.0 ", "OCSP_MODE": "FAIL_OPEN", "TRACING": 40, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null, "CLIENT_STORE_TEMPORARY_CREDENTIAL": null}, "PASSWORD": "********", "SESSION_PARAMETERS": {"AUTOCOMMIT": false, "CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY": 900, "CLIENT_PREFETCH_THREADS": 4}}}
+2022-07-30 23:09:46.393929 (ThreadPoolExecutor-0_0): Got an error when attempting to open a snowflake connection: '250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=4b90bd63-4831-46d2-bb78-a6449d24fc28&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=FIVETRAN_WAREHOUSE&roleName=FIVETRAN_ROLE&request_guid=d2895009-e037-4c7d-adec-fd1feea59159'
+2022-07-30 23:09:46.394018 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_FIVETRAN_DATABASE"} */
+
+    show terse schemas in database FIVETRAN_DATABASE
+    limit 10000
+2022-07-30 23:09:46.394079 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-07-30 23:09:46.394190 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2022-07-30 23:09:46.394246 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2022-07-30 23:09:46.394340 (ThreadPoolExecutor-0_0): On list_FIVETRAN_DATABASE: No close available on handle
+2022-07-30 23:09:46.394837 (MainThread): Connection 'master' was properly closed.
+2022-07-30 23:09:46.394918 (MainThread): Connection 'list_FIVETRAN_DATABASE' was properly closed.
+2022-07-30 23:09:46.395045 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc668bb358>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc669326a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc6698ef98>]}
+2022-07-30 23:09:46.395199 (MainThread): Flushing usage events
+2022-07-30 23:09:46.787007 (MainThread): Encountered an error:
+2022-07-30 23:09:46.787335 (MainThread): Runtime Error
+  Database error while listing schemas in database "FIVETRAN_DATABASE"
+  Database Error
+    250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=4b90bd63-4831-46d2-bb78-a6449d24fc28&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=FIVETRAN_WAREHOUSE&roleName=FIVETRAN_ROLE&request_guid=d2895009-e037-4c7d-adec-fd1feea59159
+2022-07-30 23:09:46.797130 (MainThread): Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 213, in open
+    **creds.auth_args()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/__init__.py", line 52, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 223, in __init__
+    self.connect(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 418, in connect
+    self.__open_connection()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 615, in __open_connection
+    self._authenticate(auth_instance)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 819, in _authenticate
+    self.__authenticate(self.__preprocess_auth_instance(auth_instance))
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/connection.py", line 849, in __authenticate
+    session_parameters=self._session_parameters,
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/auth.py", line 216, in authenticate
+    socket_timeout=self._rest._connection.login_timeout)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 491, in _post_request
+    _include_retry_params=_include_retry_params)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 568, in fetch
+    **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 677, in _request_exec_wrapper
+    raise e
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 610, in _request_exec_wrapper
+    method, full_url, headers, data, conn)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/network.py", line 721, in _handle_unknown_error
+    'errno': ER_FAILED_TO_REQUEST,
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/errors.py", line 126, in errorhandler_wrapper
+    connection.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/errors.py", line 88, in default_errorhandler
+    done_format_msg=error_value.get('done_format_msg'))
+snowflake.connector.errors.OperationalError: 250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=4b90bd63-4831-46d2-bb78-a6449d24fc28&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=FIVETRAN_WAREHOUSE&roleName=FIVETRAN_ROLE&request_guid=d2895009-e037-4c7d-adec-fd1feea59159
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/impl.py", line 103, in list_schemas
+    kwargs={'database': database}
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 1002, in execute_macro
+    result = macro_function(**kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 230, in execute
+    fetch=fetch
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 317, in add_query
+    abridge_sql_log=abridge_sql_log
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 79, in add_query
+    cursor = connection.handle.cursor()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/contracts/connection.py", line 81, in handle
+    self._handle.resolve(self)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/contracts/connection.py", line 107, in resolve
+    return self.opener(connection)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 231, in open
+    raise FailedToConnectException(str(e))
+dbt.exceptions.FailedToConnectException: Database Error
+  250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=4b90bd63-4831-46d2-bb78-a6449d24fc28&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=FIVETRAN_WAREHOUSE&roleName=FIVETRAN_ROLE&request_guid=d2895009-e037-4c7d-adec-fd1feea59159
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 426, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/run.py", line 409, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 515, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/utils.py", line 469, in connected
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/runnable.py", line 492, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/impl.py", line 110, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "FIVETRAN_DATABASE"
+  Database Error
+    250003: Failed to get the response. Hanging? method: post, url: https://zs12696.us-east-2.snowflakecomputing.com:443/session/v1/login-request?request_id=4b90bd63-4831-46d2-bb78-a6449d24fc28&databaseName=FIVETRAN_DATABASE&schemaName=PUBLIC&warehouse=FIVETRAN_WAREHOUSE&roleName=FIVETRAN_ROLE&request_guid=d2895009-e037-4c7d-adec-fd1feea59159
+
+2022-07-30 23:18:48.366354 (MainThread): Running with dbt=0.19.1
+2022-07-30 23:18:49.288037 (MainThread): You have an incompatible version of 'pyarrow' installed, please install a version that adheres to: 'pyarrow<0.18.0,>=0.17.0; extra == "pandas"'
+2022-07-30 23:18:49.353664 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/neelshgupta/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-07-30 23:18:49.359905 (MainThread): Tracking: tracking
+2022-07-30 23:18:49.360556 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2b2da7550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2adfbbe10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2b2dd0ba8>]}
+2022-07-30 23:18:49.374570 (MainThread): Partial parsing not enabled
+2022-07-30 23:18:49.376429 (MainThread): Parsing macros/catalog.sql
+2022-07-30 23:18:49.379679 (MainThread): Parsing macros/adapters.sql
+2022-07-30 23:18:49.411356 (MainThread): Parsing macros/materializations/merge.sql
+2022-07-30 23:18:49.413913 (MainThread): Parsing macros/materializations/view.sql
+2022-07-30 23:18:49.415834 (MainThread): Parsing macros/materializations/table.sql
+2022-07-30 23:18:49.420445 (MainThread): Parsing macros/materializations/incremental.sql
+2022-07-30 23:18:49.433077 (MainThread): Parsing macros/core.sql
+2022-07-30 23:18:49.438495 (MainThread): Parsing macros/materializations/helpers.sql
+2022-07-30 23:18:49.448400 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-07-30 23:18:49.450725 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-07-30 23:18:49.554380 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-07-30 23:18:49.594166 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-07-30 23:18:49.616074 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-07-30 23:18:49.618566 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-07-30 23:18:49.625285 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-07-30 23:18:49.640192 (MainThread): Parsing macros/materializations/table/table.sql
+2022-07-30 23:18:49.647329 (MainThread): Parsing macros/materializations/view/view.sql
+2022-07-30 23:18:49.654103 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-07-30 23:18:49.659712 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-07-30 23:18:49.661617 (MainThread): Parsing macros/etc/query.sql
+2022-07-30 23:18:49.663213 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-07-30 23:18:49.665308 (MainThread): Parsing macros/etc/datetime.sql
+2022-07-30 23:18:49.675197 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-07-30 23:18:49.677992 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-07-30 23:18:49.680219 (MainThread): Parsing macros/adapters/common.sql
+2022-07-30 23:18:49.723520 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-07-30 23:18:49.726189 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-07-30 23:18:49.728357 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-07-30 23:18:49.730579 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-07-30 23:18:49.741432 (MainThread): Partial parsing not enabled
+2022-07-30 23:18:49.764407 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:18:49.775710 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_second_dbt_model".
+2022-07-30 23:18:49.842181 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '17098481-6488-4aa0-9531-74b096bfbaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2b30a6320>]}
+2022-07-30 23:18:49.846780 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '17098481-6488-4aa0-9531-74b096bfbaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2b100b240>]}
+2022-07-30 23:18:49.847062 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-30 23:18:49.847737 (MainThread): 
+2022-07-30 23:18:49.848032 (MainThread): Acquiring new snowflake connection "master".
+2022-07-30 23:18:49.848885 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_FIVETRAN_DATABASE".
+2022-07-30 23:18:49.860654 (ThreadPoolExecutor-0_0): Using snowflake connection "list_FIVETRAN_DATABASE".
+2022-07-30 23:18:49.860795 (ThreadPoolExecutor-0_0): On list_FIVETRAN_DATABASE: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_FIVETRAN_DATABASE"} */
+
+    show terse schemas in database FIVETRAN_DATABASE
+    limit 10000
+2022-07-30 23:18:49.860872 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-30 23:18:50.904385 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 6 in 1.04 seconds
+2022-07-30 23:18:50.906262 (ThreadPoolExecutor-0_0): On list_FIVETRAN_DATABASE: Close
+2022-07-30 23:18:51.024718 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_FIVETRAN_DATABASE_PUBLIC".
+2022-07-30 23:18:51.033014 (ThreadPoolExecutor-1_0): Using snowflake connection "list_FIVETRAN_DATABASE_PUBLIC".
+2022-07-30 23:18:51.033153 (ThreadPoolExecutor-1_0): On list_FIVETRAN_DATABASE_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_FIVETRAN_DATABASE_PUBLIC"} */
+
+    show terse objects in FIVETRAN_DATABASE.PUBLIC
+2022-07-30 23:18:51.033243 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2022-07-30 23:18:51.706495 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 0 in 0.67 seconds
+2022-07-30 23:18:51.706966 (ThreadPoolExecutor-1_0): On list_FIVETRAN_DATABASE_PUBLIC: Close
+2022-07-30 23:18:51.836466 (MainThread): Using snowflake connection "master".
+2022-07-30 23:18:51.836618 (MainThread): On master: BEGIN
+2022-07-30 23:18:51.836697 (MainThread): Opening a new connection, currently in state init
+2022-07-30 23:18:52.367573 (MainThread): SQL status: SUCCESS 1 in 0.53 seconds
+2022-07-30 23:18:52.367771 (MainThread): On master: COMMIT
+2022-07-30 23:18:52.367919 (MainThread): Using snowflake connection "master".
+2022-07-30 23:18:52.367994 (MainThread): On master: COMMIT
+2022-07-30 23:18:52.501809 (MainThread): SQL status: SUCCESS 1 in 0.13 seconds
+2022-07-30 23:18:52.501991 (MainThread): On master: Close
+2022-07-30 23:18:52.631514 (MainThread): 18:18:52 | Concurrency: 8 threads (target='dev')
+2022-07-30 23:18:52.631700 (MainThread): 18:18:52 | 
+2022-07-30 23:18:52.632908 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2022-07-30 23:18:52.633165 (Thread-1): 18:18:52 | 1 of 2 START table model PUBLIC.my_first_dbt_model................... [RUN]
+2022-07-30 23:18:52.633438 (Thread-1): Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:18:52.633545 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2022-07-30 23:18:52.635956 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2022-07-30 23:18:52.636606 (Thread-1): finished collecting timing info
+2022-07-30 23:18:52.665219 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_first_dbt_model"
+2022-07-30 23:18:52.666644 (Thread-1): Using snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:18:52.666808 (Thread-1): On model.my_new_project.my_first_dbt_model: BEGIN
+2022-07-30 23:18:52.666931 (Thread-1): Opening a new connection, currently in state closed
+2022-07-30 23:18:53.221719 (Thread-1): SQL status: SUCCESS 1 in 0.55 seconds
+2022-07-30 23:18:53.221890 (Thread-1): Using snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:18:53.221972 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+
+      create or replace transient table FIVETRAN_DATABASE.PUBLIC.my_first_dbt_model  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2022-07-30 23:18:53.312188 (Thread-1): Snowflake query id: 01a5f656-0000-af4d-0002-a3d60001511e
+2022-07-30 23:18:53.312324 (Thread-1): Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on schema 'PUBLIC'
+2022-07-30 23:18:53.312450 (Thread-1): finished collecting timing info
+2022-07-30 23:18:53.312568 (Thread-1): On model.my_new_project.my_first_dbt_model: ROLLBACK
+2022-07-30 23:18:53.436902 (Thread-1): On model.my_new_project.my_first_dbt_model: Close
+2022-07-30 23:18:53.558538 (Thread-1): Database Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled SQL at target/run/my_new_project/models/example/my_first_dbt_model.sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/cursor.py", line 588, in execute
+    errvalue)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/errors.py", line 123, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/snowflake/connector/errors.py", line 88, in default_errorhandler
+    done_format_msg=error_value.get('done_format_msg'))
+snowflake.connector.errors.ProgrammingError: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on schema 'PUBLIC'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 67, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 230, in execute
+    fetch=fetch
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 317, in add_query
+    abridge_sql_log=abridge_sql_log
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/opt/anaconda3/envs/warehouse/lib/python3.6/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on schema 'PUBLIC'
+  compiled SQL at target/run/my_new_project/models/example/my_first_dbt_model.sql
+2022-07-30 23:18:53.578777 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '17098481-6488-4aa0-9531-74b096bfbaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2b33217f0>]}
+2022-07-30 23:18:53.579109 (Thread-1): 18:18:53 | 1 of 2 ERROR creating table model PUBLIC.my_first_dbt_model.......... [ERROR in 0.95s]
+2022-07-30 23:18:53.579232 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2022-07-30 23:18:53.579618 (Thread-2): Began running node model.my_new_project.my_second_dbt_model
+2022-07-30 23:18:53.579758 (Thread-2): 18:18:53 | 2 of 2 SKIP relation PUBLIC.my_second_dbt_model...................... [SKIP]
+2022-07-30 23:18:53.579870 (Thread-2): Finished running node model.my_new_project.my_second_dbt_model
+2022-07-30 23:18:53.653229 (MainThread): Acquiring new snowflake connection "master".
+2022-07-30 23:18:53.653827 (MainThread): Using snowflake connection "master".
+2022-07-30 23:18:53.654076 (MainThread): On master: BEGIN
+2022-07-30 23:18:53.654314 (MainThread): Opening a new connection, currently in state closed
+2022-07-30 23:18:54.166905 (MainThread): SQL status: SUCCESS 1 in 0.51 seconds
+2022-07-30 23:18:54.167369 (MainThread): On master: COMMIT
+2022-07-30 23:18:54.167750 (MainThread): Using snowflake connection "master".
+2022-07-30 23:18:54.167904 (MainThread): On master: COMMIT
+2022-07-30 23:18:54.312813 (MainThread): SQL status: SUCCESS 1 in 0.14 seconds
+2022-07-30 23:18:54.313259 (MainThread): On master: Close
+2022-07-30 23:18:54.787790 (MainThread): 18:18:54 | 
+2022-07-30 23:18:54.788037 (MainThread): 18:18:54 | Finished running 1 table model, 1 view model in 4.94s.
+2022-07-30 23:18:54.788194 (MainThread): Connection 'master' was properly closed.
+2022-07-30 23:18:54.788304 (MainThread): Connection 'model.my_new_project.my_first_dbt_model' was properly closed.
+2022-07-30 23:18:54.797276 (MainThread): 
+2022-07-30 23:18:54.797478 (MainThread): Completed with 1 error and 0 warnings:
+2022-07-30 23:18:54.797613 (MainThread): 
+2022-07-30 23:18:54.797733 (MainThread): Database Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+2022-07-30 23:18:54.797841 (MainThread):   003001 (42501): SQL access control error:
+2022-07-30 23:18:54.797939 (MainThread):   Insufficient privileges to operate on schema 'PUBLIC'
+2022-07-30 23:18:54.798035 (MainThread):   compiled SQL at target/run/my_new_project/models/example/my_first_dbt_model.sql
+2022-07-30 23:18:54.798139 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+2022-07-30 23:18:54.798325 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2b2f04240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2adfbbe10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2b309c048>]}
+2022-07-30 23:18:54.798544 (MainThread): Flushing usage events
+2022-07-30 23:20:30.837641 (MainThread): Running with dbt=0.19.1
+2022-07-30 23:20:31.741651 (MainThread): You have an incompatible version of 'pyarrow' installed, please install a version that adheres to: 'pyarrow<0.18.0,>=0.17.0; extra == "pandas"'
+2022-07-30 23:20:31.805986 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/neelshgupta/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2022-07-30 23:20:31.809635 (MainThread): Tracking: tracking
+2022-07-30 23:20:31.810381 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b618d2e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b66d80b38>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b66d807f0>]}
+2022-07-30 23:20:31.823401 (MainThread): Partial parsing not enabled
+2022-07-30 23:20:31.824955 (MainThread): Parsing macros/catalog.sql
+2022-07-30 23:20:31.827689 (MainThread): Parsing macros/adapters.sql
+2022-07-30 23:20:31.858585 (MainThread): Parsing macros/materializations/merge.sql
+2022-07-30 23:20:31.861160 (MainThread): Parsing macros/materializations/view.sql
+2022-07-30 23:20:31.862933 (MainThread): Parsing macros/materializations/table.sql
+2022-07-30 23:20:31.867186 (MainThread): Parsing macros/materializations/incremental.sql
+2022-07-30 23:20:31.879861 (MainThread): Parsing macros/core.sql
+2022-07-30 23:20:31.884053 (MainThread): Parsing macros/materializations/helpers.sql
+2022-07-30 23:20:31.893044 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-07-30 23:20:31.894925 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-07-30 23:20:31.997260 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-07-30 23:20:32.036848 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-07-30 23:20:32.058256 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-07-30 23:20:32.060347 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-07-30 23:20:32.066898 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-07-30 23:20:32.081027 (MainThread): Parsing macros/materializations/table/table.sql
+2022-07-30 23:20:32.088167 (MainThread): Parsing macros/materializations/view/view.sql
+2022-07-30 23:20:32.094640 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-07-30 23:20:32.099588 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-07-30 23:20:32.100699 (MainThread): Parsing macros/etc/query.sql
+2022-07-30 23:20:32.101894 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-07-30 23:20:32.103630 (MainThread): Parsing macros/etc/datetime.sql
+2022-07-30 23:20:32.113000 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-07-30 23:20:32.115284 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-07-30 23:20:32.117269 (MainThread): Parsing macros/adapters/common.sql
+2022-07-30 23:20:32.161812 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-07-30 23:20:32.163932 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-07-30 23:20:32.165647 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-07-30 23:20:32.167476 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-07-30 23:20:32.175910 (MainThread): Partial parsing not enabled
+2022-07-30 23:20:32.196828 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:20:32.206234 (MainThread): Acquiring new snowflake connection "model.my_new_project.my_second_dbt_model".
+2022-07-30 23:20:32.272755 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '39e2bafe-a448-4ce8-a4ce-4763790dafee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b67166550>]}
+2022-07-30 23:20:32.279208 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '39e2bafe-a448-4ce8-a4ce-4763790dafee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b66d1f550>]}
+2022-07-30 23:20:32.279488 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-30 23:20:32.280183 (MainThread): 
+2022-07-30 23:20:32.280483 (MainThread): Acquiring new snowflake connection "master".
+2022-07-30 23:20:32.281302 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_COMBINE_DW".
+2022-07-30 23:20:32.292771 (ThreadPoolExecutor-0_0): Using snowflake connection "list_COMBINE_DW".
+2022-07-30 23:20:32.292892 (ThreadPoolExecutor-0_0): On list_COMBINE_DW: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_COMBINE_DW"} */
+
+    show terse schemas in database COMBINE_DW
+    limit 10000
+2022-07-30 23:20:32.292969 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-30 23:20:32.943380 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 3 in 0.65 seconds
+2022-07-30 23:20:32.946808 (ThreadPoolExecutor-0_0): On list_COMBINE_DW: Close
+2022-07-30 23:20:33.071116 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_COMBINE_DW_PUBLIC".
+2022-07-30 23:20:33.077525 (ThreadPoolExecutor-1_0): Using snowflake connection "list_COMBINE_DW_PUBLIC".
+2022-07-30 23:20:33.077671 (ThreadPoolExecutor-1_0): On list_COMBINE_DW_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "connection_name": "list_COMBINE_DW_PUBLIC"} */
+
+    show terse objects in COMBINE_DW.PUBLIC
+2022-07-30 23:20:33.077750 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2022-07-30 23:20:33.818372 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 0 in 0.74 seconds
+2022-07-30 23:20:33.819399 (ThreadPoolExecutor-1_0): On list_COMBINE_DW_PUBLIC: Close
+2022-07-30 23:20:33.950678 (MainThread): Using snowflake connection "master".
+2022-07-30 23:20:33.950853 (MainThread): On master: BEGIN
+2022-07-30 23:20:33.950957 (MainThread): Opening a new connection, currently in state init
+2022-07-30 23:20:34.753786 (MainThread): SQL status: SUCCESS 1 in 0.80 seconds
+2022-07-30 23:20:34.754239 (MainThread): On master: COMMIT
+2022-07-30 23:20:34.754596 (MainThread): Using snowflake connection "master".
+2022-07-30 23:20:34.754751 (MainThread): On master: COMMIT
+2022-07-30 23:20:34.889826 (MainThread): SQL status: SUCCESS 1 in 0.13 seconds
+2022-07-30 23:20:34.890295 (MainThread): On master: Close
+2022-07-30 23:20:35.014163 (MainThread): 18:20:35 | Concurrency: 8 threads (target='dev')
+2022-07-30 23:20:35.014429 (MainThread): 18:20:35 | 
+2022-07-30 23:20:35.016344 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2022-07-30 23:20:35.016710 (Thread-1): 18:20:35 | 1 of 2 START table model PUBLIC.my_first_dbt_model................... [RUN]
+2022-07-30 23:20:35.017112 (Thread-1): Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:20:35.017300 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2022-07-30 23:20:35.020116 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2022-07-30 23:20:35.023046 (Thread-1): finished collecting timing info
+2022-07-30 23:20:35.060781 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_first_dbt_model"
+2022-07-30 23:20:35.063847 (Thread-1): Using snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:20:35.063968 (Thread-1): On model.my_new_project.my_first_dbt_model: BEGIN
+2022-07-30 23:20:35.064045 (Thread-1): Opening a new connection, currently in state closed
+2022-07-30 23:20:35.729189 (Thread-1): SQL status: SUCCESS 1 in 0.67 seconds
+2022-07-30 23:20:35.729350 (Thread-1): Using snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:20:35.729424 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+
+      create or replace transient table COMBINE_DW.PUBLIC.my_first_dbt_model  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2022-07-30 23:20:36.722782 (Thread-1): SQL status: SUCCESS 1 in 0.99 seconds
+2022-07-30 23:20:36.725042 (Thread-1): On model.my_new_project.my_first_dbt_model: COMMIT
+2022-07-30 23:20:36.725324 (Thread-1): Using snowflake connection "model.my_new_project.my_first_dbt_model".
+2022-07-30 23:20:36.725488 (Thread-1): On model.my_new_project.my_first_dbt_model: COMMIT
+2022-07-30 23:20:36.796589 (Thread-1): SQL status: SUCCESS 1 in 0.07 seconds
+2022-07-30 23:20:36.810508 (Thread-1): finished collecting timing info
+2022-07-30 23:20:36.810722 (Thread-1): On model.my_new_project.my_first_dbt_model: Close
+2022-07-30 23:20:36.925348 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '39e2bafe-a448-4ce8-a4ce-4763790dafee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b6737b4a8>]}
+2022-07-30 23:20:36.925848 (Thread-1): 18:20:36 | 1 of 2 OK created table model PUBLIC.my_first_dbt_model.............. [SUCCESS 1 in 1.91s]
+2022-07-30 23:20:36.926040 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2022-07-30 23:20:36.926537 (Thread-2): Began running node model.my_new_project.my_second_dbt_model
+2022-07-30 23:20:36.926834 (Thread-2): 18:20:36 | 2 of 2 START view model PUBLIC.my_second_dbt_model................... [RUN]
+2022-07-30 23:20:36.927228 (Thread-2): Acquiring new snowflake connection "model.my_new_project.my_second_dbt_model".
+2022-07-30 23:20:36.927382 (Thread-2): Compiling model.my_new_project.my_second_dbt_model
+2022-07-30 23:20:36.930348 (Thread-2): Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+2022-07-30 23:20:36.930814 (Thread-2): finished collecting timing info
+2022-07-30 23:20:36.952225 (Thread-2): Writing runtime SQL for node "model.my_new_project.my_second_dbt_model"
+2022-07-30 23:20:36.953058 (Thread-2): Using snowflake connection "model.my_new_project.my_second_dbt_model".
+2022-07-30 23:20:36.953160 (Thread-2): On model.my_new_project.my_second_dbt_model: BEGIN
+2022-07-30 23:20:36.953245 (Thread-2): Opening a new connection, currently in state init
+2022-07-30 23:20:37.462809 (Thread-2): SQL status: SUCCESS 1 in 0.51 seconds
+2022-07-30 23:20:37.463024 (Thread-2): Using snowflake connection "model.my_new_project.my_second_dbt_model".
+2022-07-30 23:20:37.463139 (Thread-2): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "fivetran_poc", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+
+  create or replace  view COMBINE_DW.PUBLIC.my_second_dbt_model  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from COMBINE_DW.PUBLIC.my_first_dbt_model
+where id = 1
+  );
+2022-07-30 23:20:37.669528 (Thread-2): SQL status: SUCCESS 1 in 0.21 seconds
+2022-07-30 23:20:37.670693 (Thread-2): On model.my_new_project.my_second_dbt_model: COMMIT
+2022-07-30 23:20:37.670831 (Thread-2): Using snowflake connection "model.my_new_project.my_second_dbt_model".
+2022-07-30 23:20:37.670899 (Thread-2): On model.my_new_project.my_second_dbt_model: COMMIT
+2022-07-30 23:20:37.752806 (Thread-2): SQL status: SUCCESS 1 in 0.08 seconds
+2022-07-30 23:20:37.753523 (Thread-2): finished collecting timing info
+2022-07-30 23:20:37.753656 (Thread-2): On model.my_new_project.my_second_dbt_model: Close
+2022-07-30 23:20:37.877048 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '39e2bafe-a448-4ce8-a4ce-4763790dafee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b673dca90>]}
+2022-07-30 23:20:37.877555 (Thread-2): 18:20:37 | 2 of 2 OK created view model PUBLIC.my_second_dbt_model.............. [SUCCESS 1 in 0.95s]
+2022-07-30 23:20:37.877750 (Thread-2): Finished running node model.my_new_project.my_second_dbt_model
+2022-07-30 23:20:37.885027 (MainThread): Acquiring new snowflake connection "master".
+2022-07-30 23:20:37.885439 (MainThread): Using snowflake connection "master".
+2022-07-30 23:20:37.885610 (MainThread): On master: BEGIN
+2022-07-30 23:20:37.885765 (MainThread): Opening a new connection, currently in state closed
+2022-07-30 23:20:38.415068 (MainThread): SQL status: SUCCESS 1 in 0.53 seconds
+2022-07-30 23:20:38.415392 (MainThread): On master: COMMIT
+2022-07-30 23:20:38.415655 (MainThread): Using snowflake connection "master".
+2022-07-30 23:20:38.415810 (MainThread): On master: COMMIT
+2022-07-30 23:20:38.550543 (MainThread): SQL status: SUCCESS 1 in 0.13 seconds
+2022-07-30 23:20:38.550872 (MainThread): On master: Close
+2022-07-30 23:20:38.669839 (MainThread): 18:20:38 | 
+2022-07-30 23:20:38.670154 (MainThread): 18:20:38 | Finished running 1 table model, 1 view model in 6.39s.
+2022-07-30 23:20:38.670350 (MainThread): Connection 'master' was properly closed.
+2022-07-30 23:20:38.670639 (MainThread): Connection 'model.my_new_project.my_first_dbt_model' was properly closed.
+2022-07-30 23:20:38.670789 (MainThread): Connection 'model.my_new_project.my_second_dbt_model' was properly closed.
+2022-07-30 23:20:38.681605 (MainThread): 
+2022-07-30 23:20:38.681787 (MainThread): Completed successfully
+2022-07-30 23:20:38.681903 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2022-07-30 23:20:38.682076 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b674ade48>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b67147be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b66ec4278>]}
+2022-07-30 23:20:38.682270 (MainThread): Flushing usage events
