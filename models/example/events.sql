@@ -1,11 +1,9 @@
 {{ config(materialized='table') }}
 
-
 {% set schema_name_query %}
-select distinct TABLE_SCHEMA from {{ source( 'information_sch' , 'tables' ) }}
-where table_schema ilike '%POC%'
+  select distinct TABLE_SCHEMA from {{ source( 'information_sch' , 'tables' ) }}
+  where table_schema ilike '%POC%'
 {% endset %}
-
 
 {% if execute %}
     {% set results = run_query(schema_name_query) %}
@@ -14,7 +12,7 @@ where table_schema ilike '%POC%'
     {% set db_names = [] %}
 {% endif %}
 
-{% set table_name = 'candidates' %}
+{% set table_name = 'events' %}
 
 with source_data as (
     {% for db in db_names %}
