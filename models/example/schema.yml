@@ -19,3 +19,12 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: candidates
+      description: "candidate combined table"
+      columns:
+          - name: id , client_name
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
